@@ -1,0 +1,24 @@
+# Exploratory Data Analysis of Ford GoBike System
+## by Ebele Shaba
+
+## Dataset
+> The dataset used for the project is the Ford goBike System Data, collected and created in the year 2019. This dataset gives information about the rides of individuals in relation to a bike sharing system in the bay area of San Francisco. The data originally contains information about 183,412 individuals making use of the Ford goBike system. However, after wrangling it then had 174,952 entries due to the dropped null values and 24 columns due to the feature engineering of six additional columns. The dataset has a combination of different data types in their correct form for analysis. This dataset was retrived in the year 2019 and can be retrived from https://video.udacity-data.com/topher/2020/October/5f91cf38_201902-fordgobike-tripdata/201902-fordgobike-tripdata.csv.
+Through techniques of wrangling and exploratory and explanatory visualisations, the goal of the project which to generate useful insights shall be met.
+
+## Summary of Findings
+> This projects aim is to understand the behaviour of the data and to point out the pat- terns therein. The main features of interest in the data through visual and programmatic assessment includes; age/birth year, type of users:, gender, and the time duration of the bike trips. 
+Univariate Plots
+Bar charts were plotted for the majority of my variables of interest. For the user_type, it can be seen for the chart that majority of them are suscribers. The bar chart also shows that they have more male users that other gender types, which can be for differnt reasons which more features can help solve. The final barchart for the member_birth_year, displayes a curve with majority of users born between 1980 and 1998 with the highest peaks in 1988 and 1993.
+There were some unsual behaviour in the histograms for duration_min and duration_sec with long tails of outliers in both plots a closer look was taken by reducting the x-axis limits however this was still flawed representaion of the plots. Eventually, the log of the duration_min and duration_sec was taken and plotted to generate a better looking normalized plot.
+Bivariate Plots
+The behaviour of user_type was introduced in the univariate analysis, were most of the users were subscribers, the same goes here. In addition an increase can be seen in the number of all member_gender types from customers to subscribers. The bar chart was also created for the user_type and bike_share_for_all_trip to note sharing behaviour.it can be noted that no customer engages in bike sharing, while a low amount of subscribers do.
+Violin and box plots were created to depict relationship between age and user_type, the two plots show that a large number of users are between the ages of 20 to 60 and this is similar for both of the user_type. There regardless of the user_type a certain age range uses the bike system more. Faceted histograms were created for the age and gender. It was already clear the males use the system more. 
+From the scatterplots created by the longitudes and latitudes of the start and end stations, it can be noted that they share very similar coordinates as the two scatter plots of the start station location and the end station location are similar. This may mean that users picked up and dropped of the bikes in the same locations.
+Multivariate Plots
+From scatterplot visualisations, it has become clearer and clearer that regardless of the member_gender and user_type the age range remains the same with majority of riders between 20 and 60 years.
+From the line charts it was interesting to note that customers spend more time on their trip accross all the days of the month even though they are smaller in number to the subscriber user_type. This may mean they have more ride or trip flexiblity.
+
+## Key Insights for Presentation
+> This project succeeded in giving some valuable insights on the way the Ford goBike System works. One major insight derived from the data is one the user type, after various plots from univariate to multivariate methods it show clearly that majority of users are subscribers regardless of their age or gender. This may mean that their policicies on suscription are more favourable to users and therefore should be continued. What is also interesting to note is regardless of the gender the age ranges do not differ too or vice versa.
+The above can be used in addition with other features to create business policies that can target users. Therefore, in case of advertisement, whom should ford target? Male subscribers i.e. with subscription model within ages 20 to 60(except they have a data driven market for females or other gender types within the same age range and user model).
+Data wrangling, data visualisation, and feature engineering techniques were performed in the project.
